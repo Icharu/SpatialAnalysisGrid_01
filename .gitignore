@@ -1,0 +1,27 @@
+# Raw downloaded open data (re-fetchable; cached locally, never committed)
+data/raw/
+!data/raw/.gitkeep
+
+# Large derived rasters/vectors are regenerable from scripts
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated outputs (regenerable from the pipeline)
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/designs/*
+!outputs/designs/.gitkeep
+
+# renv library (restore from renv.lock); keep the lockfile + activate script
+renv/library/
+renv/local/
+renv/cellar/
+renv/staging/
+renv/python/
+renv/sandbox/
+
+# R session cruft
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
